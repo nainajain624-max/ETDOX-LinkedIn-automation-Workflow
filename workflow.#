@@ -1,0 +1,41 @@
+# Phase 3 – Automated Lead Follow-up Workflow
+
+## Workflow Steps
+
+1. **Schedule by Zapier**
+   - Runs the follow-up automation daily.
+
+2. **Google Sheets – Get Many Spreadsheet Rows**
+   - Retrieves lead records from the connected Google Sheets worksheet.
+
+3. **Code by Zapier**
+   - Processes the retrieved spreadsheet data.
+   - Extracts the required lead details and follow-up information.
+   - Prepares the data for further processing.
+
+4. **Looping by Zapier**
+   - Processes lead records individually.
+
+5. **Filter by Zapier**
+   - Checks the configured conditions.
+   - Allows only eligible leads to continue.
+
+6. **Gmail – Create Draft**
+   - Creates a personalized follow-up email draft for eligible leads.
+
+7. **Gmail – Send Email**
+   - Sends the follow-up email according to the configured workflow.
+
+8. **Google Sheets – Update Spreadsheet Row**
+   - Updates the corresponding lead record after the email action.
+
+## Follow-up Logic
+- Follow-up interval: 3 days.
+- Next Follow-up Date is calculated using a Google Sheets formula.
+- Eligible leads are processed individually.
+
+## Technologies Used
+- Zapier
+- Google Sheets
+- Gmail
+- JavaScript
